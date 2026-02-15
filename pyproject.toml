@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68.0", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gmail-spam-cleaner"
+version = "0.1.0"
+description = "CLI tool to scan and clean newsletters/spam from Gmail"
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.1",
+    "google-api-python-client>=2.100",
+    "google-auth-oauthlib>=1.1",
+    "google-auth-httplib2>=0.2",
+    "rich>=13.0",
+    "tenacity>=8.2",
+]
+
+[project.scripts]
+gmail-spam-cleaner = "gmail_spam_cleaner.cli:cli"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-mock",
+    "ruff",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

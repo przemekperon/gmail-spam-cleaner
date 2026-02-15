@@ -1,0 +1,12 @@
+{
+  "id": "msg_newsletter_001",
+  "labelIds": ["INBOX", "CATEGORY_PROMOTIONS"],
+  "payload": {
+    "headers": [
+      {"name": "From", "value": "Newsletter Team <noreply@example-newsletter.com>"},
+      {"name": "Subject", "value": "Weekly Digest: Top Stories This Week"},
+      {"name": "List-Unsubscribe", "value": "<https://example-newsletter.com/unsubscribe>"},
+      {"name": "Precedence", "value": "bulk"}
+    ]
+  }
+}

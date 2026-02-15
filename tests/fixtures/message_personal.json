@@ -1,0 +1,10 @@
+{
+  "id": "msg_personal_001",
+  "labelIds": ["INBOX"],
+  "payload": {
+    "headers": [
+      {"name": "From", "value": "Alice Smith <alice.smith@gmail.com>"},
+      {"name": "Subject", "value": "Re: Lunch tomorrow?"}
+    ]
+  }
+}
